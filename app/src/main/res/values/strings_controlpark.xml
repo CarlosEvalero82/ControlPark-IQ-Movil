@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de la app móvil de ControlPark-IQ (GA8-220501096-AA2-EV02) -->
+<resources>
+    <!-- Comunes -->
+    <string name="cerrar_sesion">Salir</string>
+    <string name="confirmar_cerrar_sesion">¿Desea cerrar la sesión?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="usuario_rol">%1$s · %2$s</string>
+    <string name="actualizado">Actualizado: %1$s</string>
+    <string name="cargando">Cargando…</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="login_subtitulo">Ingrese con el usuario asignado por la administración del conjunto.</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_contrasena">Contraseña</string>
+    <string name="login_ingresar">Ingresar</string>
+    <string name="login_conectando">Conectando con el servidor… La primera conexión puede tardar hasta un minuto.</string>
+    <string name="login_bienvenido">Bienvenido, %1$s</string>
+    <string name="login_usuarios_demo">Usuarios de prueba\nadmin.torres · Parque2026 (Administrador)\nporteria.torre1 · Garita2026 (Portería)\nlaura.gomez · Residente2026 (Residente)</string>
+
+    <!-- Portería -->
+    <string name="porteria_titulo">Portería</string>
+    <string name="porteria_entrada">Registrar entrada</string>
+    <string name="porteria_placa">Placa del vehículo</string>
+    <string name="porteria_placa_ayuda">Carro: ABC123 · Moto: ABC12D</string>
+    <string name="porteria_placa_invalida">Placa no válida. Carro: ABC123 · Moto: ABC12D</string>
+    <string name="porteria_registrar">Registrar entrada</string>
+    <string name="porteria_entrada_ok">Entrada registrada: %1$s → espacio %2$s (%3$s)</string>
+    <string name="porteria_dentro">Vehículos dentro (%1$d)</string>
+    <string name="porteria_vacio">No hay vehículos dentro del conjunto.</string>
+    <string name="porteria_salida">Registrar salida</string>
+    <string name="porteria_confirmar_salida">¿Registrar la salida de %1$s del espacio %2$s?</string>
+    <string name="porteria_salida_ok">Salida registrada: %1$s</string>
+    <string name="porteria_deslizar">Deslice hacia abajo para actualizar</string>
+
+    <!-- Cobro -->
+    <string name="cobro_titulo">Cobro factura N.º %1$d</string>
+    <string name="cobro_horas">%1$d hora(s) × %2$s</string>
+    <string name="cobro_metodo">Método de pago</string>
+    <string name="cobro_efectivo">Efectivo</string>
+    <string name="cobro_tarjeta">Tarjeta</string>
+    <string name="cobro_transferencia">Transferencia</string>
+    <string name="cobro_pagar">Registrar pago</string>
+    <string name="cobro_despues">Más tarde</string>
+    <string name="cobro_ok">Pago registrado · Factura N.º %1$d · %2$s</string>
+    <string name="cobro_pendiente">La factura N.º %1$d quedó pendiente de pago</string>
+
+    <!-- Sesión (tarjeta reutilizable) -->
+    <string name="sesion_residente">Residente</string>
+    <string name="sesion_visitante">Visitante</string>
+    <string name="sesion_espacio">Espacio %1$s · %2$s</string>
+    <string name="sesion_entrada_abierta">Entrada %1$s · hace %2$s</string>
+    <string name="sesion_entrada_cerrada">%1$s → %2$s</string>
+
+    <!-- Administrador -->
+    <string name="admin_titulo">Tablero de operación</string>
+    <string name="admin_ocupacion">Ocupación</string>
+    <string name="admin_ocupacion_detalle">%1$d ocupados de %2$d habilitados</string>
+    <string name="admin_dentro">Vehículos dentro</string>
+    <string name="admin_dentro_detalle">%1$d entradas hoy</string>
+    <string name="admin_ingresos">Ingresos de hoy</string>
+    <string name="admin_ingresos_detalle">Mes: %1$s</string>
+    <string name="admin_pendientes">Cobros pendientes</string>
+    <string name="admin_pendientes_detalle">Por cobrar: %1$s</string>
+    <string name="admin_mensualidades">Mensualidades</string>
+    <string name="admin_mensualidades_detalle">%1$d vehículos de residentes</string>
+    <string name="admin_zonas">Ocupación por zona</string>
+    <string name="admin_zona_detalle">%1$d ocupados · %2$d libres · %3$d total</string>
+    <string name="admin_estados">Espacios por estado</string>
+    <string name="admin_ir_porteria">Ir a portería</string>
+
+    <!-- Residente -->
+    <string name="residente_titulo">Mi parqueadero</string>
+    <string name="residente_documento">Documento %1$s</string>
+    <string name="residente_mensualidad">Mensualidad del mes</string>
+    <string name="residente_mis_vehiculos">Mis vehículos (%1$d)</string>
+    <string name="residente_adentro">Dentro del conjunto ahora (%1$d)</string>
+    <string name="residente_ninguno_adentro">Ninguno de sus vehículos está dentro.</string>
+    <string name="residente_historial">Historial reciente</string>
+    <string name="residente_sin_historial">Aún no hay movimientos registrados.</string>
+</resources>

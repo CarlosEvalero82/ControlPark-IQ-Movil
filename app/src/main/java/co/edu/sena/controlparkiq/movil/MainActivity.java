@@ -1,46 +1,39 @@
 package co.edu.sena.controlparkiq.movil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
+import co.edu.sena.controlparkiq.movil.ui.comun.ActividadBase;
+import co.edu.sena.controlparkiq.movil.ui.comun.Navegador;
+import co.edu.sena.controlparkiq.movil.ui.login.LoginActivity;
 
 /**
- * Actividad principal de ControlPark-IQ móvil.
- * Muestra la pantalla de bienvenida (activity_main.xml) y un mensaje Toast.
- * Evidencia GA8-220501096-AA2-EV01.
+ * Pantalla de bienvenida de ControlPark-IQ móvil (creada en la evidencia
+ * GA8-220501096-AA2-EV01). Si ya hay una sesión guardada, abre directamente
+ * la pantalla del rol; si no, el botón Ingresar lleva al inicio de sesión.
  *
  * @author Carlos Eduardo Valero
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ActividadBase {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        WindowCompat.enableEdgeToEdge(getWindow());
 
-        // Une esta actividad con su diseño XML
+        if (sesion.estaActiva()) {
+            Navegador.irSegunRol(this, sesion.getRol());
+            return;
+        }
+
         setContentView(R.layout.activity_main);
+        aplicarMargenesSistema(findViewById(R.id.main));
 
-        // Respeta las barras del sistema (estado y navegación)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        // Mensaje emergente (Toast) al abrir la aplicación
         Toast.makeText(this, "Bienvenido a ControlPark-IQ", Toast.LENGTH_SHORT).show();
 
-        // Evento Listener del botón Ingresar
+        // Evento Listener del botón Ingresar: abre el inicio de sesión
         Button btnIngresar = findViewById(R.id.btnIngresar);
-        btnIngresar.setOnClickListener(v ->
-                Toast.makeText(this, "¡Hola, ADSO! Primera app Android de ControlPark-IQ",
-                        Toast.LENGTH_LONG).show());
+        btnIngresar.setOnClickListener(v -> startActivity(new Intent(this, LoginActivity.class)));
     }
 }

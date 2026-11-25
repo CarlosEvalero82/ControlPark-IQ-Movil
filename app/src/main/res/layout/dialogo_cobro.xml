@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenido de la ventana de cobro al visitante -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="24dp">
+
+    <TextView
+        android:id="@+id/txtCobroPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cp_texto"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtCobroTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/cp_texto_suave"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtCobroDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/cp_texto_suave"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtCobroTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/cp_morado"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/cobro_metodo"
+        android:textColor="@color/cp_texto"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/grupoMetodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/opcionEfectivo">
+
+        <RadioButton
+            android:id="@+id/opcionEfectivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cobro_efectivo" />
+
+        <RadioButton
+            android:id="@+id/opcionTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cobro_tarjeta" />
+
+        <RadioButton
+            android:id="@+id/opcionTransferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cobro_transferencia" />
+    </RadioGroup>
+</LinearLayout>
