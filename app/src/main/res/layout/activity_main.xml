@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla de bienvenida de ControlPark-IQ (GA8-220501096-AA2-EV01) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F3FA"
+    tools:context=".MainActivity">
+
+    <!-- Título de la aplicación -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ControlPark-IQ"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#35254F" />
+
+    <!-- Descripción corta -->
+    <TextView
+        android:id="@+id/txtSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Gestión de parqueaderos para conjuntos residenciales"
+        android:textSize="16sp"
+        android:textColor="#5A5A6E" />
+
+    <!-- Mensaje de la primera app -->
+    <TextView
+        android:id="@+id/txtSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="¡Hola, ADSO!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0072B2" />
+
+    <!-- Botón que muestra un mensaje emergente (Toast) -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ingresar" />
+
+    <!-- Pie de pantalla -->
+    <TextView
+        android:id="@+id/txtPie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="SENA · Ficha 3235898"
+        android:textSize="12sp"
+        android:textColor="#8A8A99" />
+
+</LinearLayout>
