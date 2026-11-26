@@ -3,8 +3,11 @@
 Aplicación móvil Android (Java) del sistema **ControlPark-IQ**, para la gestión de parqueaderos en conjuntos residenciales. Consume la API REST de ControlPark-IQ desplegada en Render.
 
 **Evidencia:** GA8-220501096-AA2-EV02 · Desarrollar módulos móviles según requerimientos del proyecto
+
 **Programa:** Tecnólogo en Análisis y Desarrollo de Software (ADSO) · SENA · Ficha 3235898
+
 **Aprendiz:** Carlos Eduardo Valero
+
 **Instructora:** Adriana Milena Rangel Márquez
 
 ## Módulos
